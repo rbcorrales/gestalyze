@@ -1,0 +1,11 @@
+{
+    "domain": "gestalyze",
+    "name": "Gestalyze",
+    "version": "0.1.0",
+    "documentation": "https://github.com/rbcorrales/gestalyze",
+    "dependencies": [],
+    "codeowners": ["@rbcorrales"],
+    "iot_class": "local_push",
+    "config_flow": true,
+    "icon": "mdi:hand-wave"
+}

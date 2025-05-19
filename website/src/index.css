@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-lg bg-primary px-4 py-2 text-white transition-colors hover:bg-primary-dark dark:bg-primary dark:hover:bg-primary-dark;
+  }
+
+  .btn-secondary {
+    @apply rounded-lg bg-gray-200 px-4 py-2 text-primary transition-colors hover:bg-gray-300 dark:bg-gray-700 dark:text-primary dark:hover:bg-gray-600;
+  }
+
+  .primary-link {
+    @apply text-primary underline transition-colors hover:text-primary-dark dark:text-primary dark:hover:text-primary-dark;
+  }
+
+  .section-title {
+    @apply mb-6 text-3xl font-bold text-gray-900 transition-colors dark:text-white;
+  }
+
+  .card {
+    @apply rounded-lg bg-white p-6 shadow-md transition-colors dark:border dark:border-gray-700 dark:bg-gray-800/80 dark:shadow-gray-900/20;
+  }
+}
+
+/* Custom backgrounds for sections */
+.hero-gradient {
+  @apply bg-gradient-to-b from-blue-50 to-white transition-colors dark:from-gray-900 dark:to-gray-800;
+}
+.section-bg {
+  @apply bg-white transition-colors dark:bg-gray-900;
+}
+.section-bg-alt {
+  @apply bg-gray-50 transition-colors dark:bg-gray-800;
+}

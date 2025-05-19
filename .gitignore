@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# Node
+node_modules/
+dist/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Project specific
+
+# Ignore everything under datasets but keep the custom_dataset sample folder
+datasets/**
+!datasets/custom_dataset/
+!datasets/custom_dataset/**/
+!datasets/custom_dataset/**/.gitkeep
+
+# Ignore saved_images and models folders
+saved_images/
+models/*
+!models/.gitkeep
+
+# MQTT password files
+backend/mqtt/*.passwd
+backend/mqtt/*.acl
+backend/mqtt/logs/*.log
+
+# SSL certificate files
+backend/ssl/key.pem
+backend/ssl/cert.pem
