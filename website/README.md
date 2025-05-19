@@ -1,4 +1,4 @@
-# Gestalyze Website ([https://gestalyze.com](gestalyze.com))
+# Gestalyze Website ([gestalyze.com](https://gestalyze.com))
 
 This is the official website for Gestalyze, a smart hand gesture analysis project. The website is built using React, Vite, and TailwindCSS.
 
@@ -94,12 +94,12 @@ website/
 │   └── index.css          # Global styles (TailwindCSS)
 ├── .eslintrc.json         # ESLint configuration
 ├── .prettierrc            # Prettier configuration
-├── .gitignore            # Git ignore rules
-├── index.html            # HTML template
-├── package.json          # Project dependencies
-├── vite.config.js        # Vite configuration
-├── tailwind.config.js    # TailwindCSS configuration
-└── postcss.config.js     # PostCSS configuration
+├── .gitignore             # Git ignore rules
+├── index.html             # HTML template
+├── package.json           # Project dependencies
+├── vite.config.js         # Vite configuration
+├── tailwind.config.js     # TailwindCSS configuration
+└── postcss.config.js      # PostCSS configuration
 ```
 
 ## Development Workflow

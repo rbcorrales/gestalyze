@@ -55,7 +55,7 @@ gestalyze/
 │   └── gestalyze_plugin/  # Home Assistant plugin for gestalyze
 ├── models/                # Serialized ML models (.joblib)
 ├── training/              # Training scripts and model experiments
-├── website/               # Public website ([https://gestalyze.com](gestalyze.com))
+├── website/               # Public website (gestalyze.com)
 └── Makefile               # Project task automation
 ```
 
