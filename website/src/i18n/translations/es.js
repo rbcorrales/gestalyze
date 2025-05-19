@@ -131,11 +131,26 @@ export const es = {
     fork: 'Fork en GitHub',
     apacheLicense: 'Licencia Apache 2.0',
     builtWith: 'Construido con ❤️ y licenciado bajo la',
+    privacyPolicy: 'Política de Privacidad',
   },
   projectStatus: {
     title: 'Estado del Proyecto',
     description:
       'Gestalyze está en desarrollo activo. Algunas funciones pueden no funcionar como se espera todavía, pero estamos trabajando para mejorar la estabilidad y añadir nuevas capacidades. ¡Gracias por tu interés y apoyo!',
     roadmap: 'Consulta nuestra hoja de ruta para ver las próximas funciones y mejoras.',
+  },
+  privacy: {
+    title: 'Política de Privacidad',
+    introduction:
+      'Esta Política de Privacidad describe cómo Gestalyze recopila, utiliza y protege su información personal.',
+    dataCollection: 'Recopilación de Datos',
+    dataCollectionText:
+      'Gestalyze procesa datos de video de su cámara en tiempo real para detectar gestos manuales. No se almacenan ni transmiten datos a servidores externos.',
+    dataUsage: 'Uso de Datos',
+    dataUsageText:
+      'Los datos de video se procesan localmente en su dispositivo para proporcionar funcionalidad de reconocimiento de gestos. Todo el procesamiento ocurre en tiempo real y no se guardan datos.',
+    dataProtection: 'Protección de Datos',
+    dataProtectionText:
+      'Su privacidad es importante para nosotros. Gestalyze no almacena, comparte ni transmite ningún dato personal. Todo el procesamiento se realiza localmente en su dispositivo.',
   },
 };

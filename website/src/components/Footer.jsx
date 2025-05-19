@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { ScaleIcon } from 'lucide-react';
 import { siGithub } from 'simple-icons/icons';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const { t } = useTranslation();
@@ -26,6 +27,13 @@ function Footer() {
             <ScaleIcon className="ml-1 inline h-4 w-4 text-gray-300" aria-hidden="true" />
           </div>
           <div className="flex items-center space-x-4">
+            <Link
+              to="/privacy"
+              className="rounded text-gray-300 underline transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              aria-label={t('footer.privacyPolicy')}
+            >
+              {t('footer.privacyPolicy')}
+            </Link>
             <a
               href="https://github.com/rbcorrales/gestalyze"
               target="_blank"
