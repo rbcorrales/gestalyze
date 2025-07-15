@@ -143,6 +143,10 @@ build:
 run: build mqtt-start
 	PYTHONPATH=. $(PYTHON) -m uvicorn --app-dir $(BACKEND_DIR) main:app --host 0.0.0.0 --port 8000
 
+# Run the application in debug mode
+run-debug: build mqtt-start
+	PYTHONPATH=. $(PYTHON) -m uvicorn --app-dir $(BACKEND_DIR) main:app --host 0.0.0.0 --port 8000 --log-level debug
+
 run-ssl: build mqtt-start ssl-key-gen
 	PYTHONPATH=. $(PYTHON) -m uvicorn --app-dir $(BACKEND_DIR) main:app --host 0.0.0.0 --port 8000 --ssl-keyfile $(SSL_DIR)/key.pem --ssl-certfile $(SSL_DIR)/cert.pem
 
