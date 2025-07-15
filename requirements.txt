@@ -9,6 +9,7 @@ numpy==1.26.4
 paho-mqtt==1.6.1
 websocket-client==1.7.0
 python-jose==3.3.0
+rich==13.7.0
 
 # Training dependencies
 scikit-learn==1.6.1

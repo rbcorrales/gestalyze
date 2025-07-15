@@ -6,6 +6,10 @@ from datetime import datetime
 from ha_client import HAClient
 from config import MQTT_CONFIG
 from plugin_config import HOME_ASSISTANT_CONFIG
+from rich.console import Console
+from rich.json import JSON
+
+console = Console()
 
 logger = logging.getLogger(__name__)
 
@@ -162,9 +166,9 @@ class GestalyzePlugin:
     def _trigger_ha_event(self, event_type: str, event_data: Dict[str, Any]):
         """Trigger a Home Assistant event."""
         try:
-            print(f"Triggering Home Assistant event {event_type} with data {event_data}")
+            console.print(f"[bold magenta]🎯 Publishing HA event:[/bold magenta] [cyan]{event_type}[/cyan]")
+            console.print(JSON.from_data(event_data))
             self.ha_client.trigger_event(event_type, event_data)
-            logger.debug(f"Triggered Home Assistant event {event_type} with data {event_data}")
         except Exception as e:
             logger.error(f"Error triggering Home Assistant event: {e}")
 

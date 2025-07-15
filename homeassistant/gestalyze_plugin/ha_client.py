@@ -3,6 +3,10 @@ import logging
 import websocket
 from typing import Dict, Any, Optional
 from plugin_config import HOME_ASSISTANT_CONFIG
+from rich.console import Console
+from rich.json import JSON
+
+console = Console()
 
 logger = logging.getLogger(__name__)
 
@@ -81,7 +85,8 @@ class HAClient:
                     "service_data": data
                 }
                 
-                print(f"Sending to HA: {json.dumps(message)}")
+                console.print("[bold yellow]🤚 Sending gesture state to HA:[/bold yellow]")
+                console.print(JSON.from_data(message))
                 self.websocket.send(json.dumps(message))
                 self.message_id += 1
                 logger.info("Successfully sent gesture state to Home Assistant")
@@ -158,9 +163,9 @@ class HAClient:
                     "event_data": event_data
                 }
                 
-                logger.debug(f"Triggering event in HA: {json.dumps(message)}")
+                console.print("[bold green]🔌 Sending WebSocket fire_event:[/bold green]")
+                console.print(JSON.from_data(message))
                 self.websocket.send(json.dumps(message))
-                print(f"Sent to HA: {json.dumps(message)}")
                 
                 # Wait for a response to confirm the event was received
                 response = json.loads(self.websocket.recv())
