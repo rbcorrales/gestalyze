@@ -63,7 +63,7 @@ gestalyze/
 
 ## 🚀 Getting Started
 
-> Requires Python 3.10+, Node.js 18+, and Mosquitto MQTT
+> Requires Python 3.10+, Node.js 20+, and Mosquitto MQTT
 
 ```bash
 # Clone repository
