@@ -1,8 +1,8 @@
 # Backend dependencies
 fastapi==0.109.2
 uvicorn[standard]==0.27.1
-python-multipart==0.0.27
-pillow==12.2.0
+python-multipart==0.0.31
+pillow==12.3.0
 opencv-python==4.9.0.80
 mediapipe==0.10.9
 numpy==1.26.4
