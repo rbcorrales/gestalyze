@@ -12,13 +12,13 @@ python-jose==3.5.0
 rich==13.9.4
 
 # Training dependencies
-scikit-learn==1.7.2
+scikit-learn==1.9.1
 joblib==1.6.0
 tqdm==4.70.1
 pandas==2.3.3
 datasets==2.21.0
 seaborn==0.13.2
-matplotlib==3.10.9
+matplotlib==3.11.2
 
 # Development dependencies
 pytest==9.1.1
