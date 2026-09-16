@@ -19,6 +19,13 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # opencv-python >= 4.12 hard-requires numpy 2. Lift once numpy 2 is adopted.
+      - dependency-name: "opencv-python"
+        versions: [">=4.12"]
+      # mediapipe >= 0.10.30 removed the legacy mp.solutions API that backend/main.py
+      # uses. Lift once the backend migrates to the Tasks API (HandLandmarker).
+      - dependency-name: "mediapipe"
+        versions: [">=0.10.30"]
 
   # Public website (Vite + React)
   - package-ecosystem: "npm"
