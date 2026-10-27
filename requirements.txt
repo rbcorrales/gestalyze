@@ -22,5 +22,5 @@ matplotlib==3.11.2
 
 # Development dependencies
 pytest==9.1.1
-black==26.5.1
+black==26.10.1
 flake8==7.3.0
