@@ -2,8 +2,8 @@ version: 2
 
 # Version updates run monthly and skip major versions. Majors (React, Tailwind,
 # Vite, mediapipe, numpy, etc.) are handled deliberately by hand.
-# Security alerts and security update PRs are independent of this schedule and
-# still fire immediately when an advisory matches the dependency graph.
+# Security update PRs are independent of this schedule and fire as soon as an
+# advisory matches; they are grouped into one PR per manifest.
 
 updates:
   # Python backend and training dependencies
@@ -14,6 +14,11 @@ updates:
     open-pull-requests-limit: 5
     groups:
       python-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      python-security:
+        applies-to: security-updates
         patterns:
           - "*"
     ignore:
@@ -35,6 +40,11 @@ updates:
     open-pull-requests-limit: 5
     groups:
       website-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      website-security:
+        applies-to: security-updates
         patterns:
           - "*"
     ignore:
@@ -49,6 +59,11 @@ updates:
     open-pull-requests-limit: 5
     groups:
       frontend-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      frontend-security:
+        applies-to: security-updates
         patterns:
           - "*"
     ignore:
