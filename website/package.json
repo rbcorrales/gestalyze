@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "i18next": "^23.10.0",
+    "i18next": "^27.2.6",
     "lucide-react": "^0.577.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
